@@ -16,7 +16,7 @@ call "C:\Program Files\Git\bin\git.exe" commit -m "uploading at %dtime% %TIME%"
 
 pause;
 
-call "C:\Program Files\Git\bin\git.exe" remote add buildrepo %repo_url%
+call "C:\Program Files\Git\bin\git.exe" remote set-url buildrepo %repo_url%
 
 call "C:\Program Files\Git\bin\git.exe" push buildrepo master
 
