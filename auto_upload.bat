@@ -18,6 +18,8 @@ pause;
 
 call "C:\Program Files\Git\bin\git.exe" remote set-url buildrepo %repo_url%
 
+echo "hello"
+
 call "C:\Program Files\Git\bin\git.exe" push buildrepo master
 
 start "" %repo_url%
