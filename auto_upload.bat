@@ -7,11 +7,12 @@ ECHO We're working with "%repo_url%"
 
 pause;
 
-ECHO OFF
-
 call "C:\Program Files\Git\bin\git.exe" init
 call "C:\Program Files\Git\bin\git.exe" add %curr_path%
-call "C:\Program Files\Git\bin\git.exe" commit -m "uploading at %TIME%"
+
+for /F "tokens=2" %%i in ('date /t') do set dtime=%%i
+
+call "C:\Program Files\Git\bin\git.exe" commit -m "uploading at %dtime% %TIME%"
 
 pause;
 
