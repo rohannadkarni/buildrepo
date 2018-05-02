@@ -1,5 +1,5 @@
 #surefire
-#Wed May 02 00:41:42 EDT 2018
+#Wed May 02 00:47:14 EDT 2018
 testSuiteDefinitionTestSourceDirectory=C\:\\Users\\Rohan\\eclipse-workspace\\maven-demo\\src\\test\\java
 includes1=**/*Test.java
 includes2=**/*TestCase.java
